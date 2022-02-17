@@ -1,0 +1,97 @@
+#encabezado {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8%;
+    position: fixed;
+    width: 100%;
+    background-color: chocolate;
+    color: white;
+}
+
+#menu {
+    position: absolute;
+    top: 8%;
+    left: 0;
+    height: 4%;
+    width: 100%;
+}
+
+#menu a {
+    background-color: peru;
+    color: black
+}
+
+#menu a:hover {
+    background-color: green;
+    color: white;
+    transition-delay: 0.7s;
+}
+
+#barralateral {
+    position: absolute;
+    top: 13.5%;
+    left: 0;
+    padding: 10px;
+    height: 81%;
+    width: 20%;
+    background-color: burlywood;
+}
+
+#contenido {
+    position: absolute;
+    top: 12%;
+    left: 0;
+    padding: 10px;
+    height: 81%;
+    width: 80%;
+    background-color: white;
+    overflow: auto;
+}
+
+#piepagina {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4%;
+    width: 100%;
+    background-color: #AAB0A0;
+    text-align: center;
+}
+
+#encabezadoTabla {
+    background-color: coral;
+    text-align: center;
+    color: blue;
+}
+
+#tablaDetalle tr:nth-child(even) {
+    background-color: blue;
+    color: white
+}
+
+#tablaDetalle tr:nth-child(odd) {
+    background-color: greenyellow;
+    color: black
+}
+
+figcaption {
+    color: rgb(170,150,50)
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 992px;
+    margin: 0 auto;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+#figure {
+    position: absolute;
+    left: 10%;
+}
