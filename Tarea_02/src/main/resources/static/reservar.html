@@ -1,0 +1,54 @@
+
+<html lang="es">
+    <head>
+        <title>Reservar</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Hotel Riu">
+        <meta name="keywords" content="Hotel, html5, css3">
+        <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
+        <link href="css/menu.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <header id="encabezado"> <!-- Etiqueta para ofrecerle al browser info de que es un encabezado -->
+            <nav class="nav">
+            <a href="index.html" class="logo nav-link"><i>Hotel Riu</i></a>
+            <ul class="nav-menu">
+                <li class="nav-menu-item"><a href="index.html" class="nav-menu-link nav-link">Inicio</a></li>
+                <li class="nav-menu-item"><a href="hoteles.html" class="nav-menu-link nav-link">Hoteles</a></li>
+                <li class="nav-menu-item"><a href="galeria.html" class="nav-menu-link nav-link">Galería</a></li>
+                <li class="nav-menu-item"><a href="mapa.html" class="nav-menu-link nav-link">Mapa</a></li>
+                <li class="nav-menu-item"><a href="detalles.html" class="nav-menu-link nav-link">Detalles</a></li>
+                <li class="nav-menu-item"><a href="interes.html" class="nav-menu-link nav-link">Lugares de interés</a></li>
+                <li class="nav-menu-item"><a href="reservar.html" class="nav-menu-link nav-link">Reservar</a></li>
+                <li class="nav-menu-item"><a href="contacto.html" class="nav-menu-link nav-link">Contacto</a></li>
+            </ul>
+        </nav>
+        </header>
+        
+        <section id="contenido">
+            <h2><i><u>Reservación</u></i></h2>
+            <br>
+        <article>
+            <form action="#">
+                <label>Nombre: </label><input type="text" name="campo01" placeholder="nombre y apellidos"/><br>
+                <label>Cédula: </label><input type="text" name="campo18" placeholder="1-112233445"/><br>
+                <label>Email: </label><input type="email" name="campo06"/><br>
+                <label>Fecha de llegada: </label><input type="date" name="campo04"/><br>
+                <label>Fecha de salida: </label><input type="date" name="campo04"/><br>
+                <label>Número de teléfono: </label><input type="tel" name="campo11" placeholder="1122-3344"/><br>
+                <label>Número de adultos: </label><input type="number" name="campo18" min="1" max="15"/><br>
+                <label>Número de niños: </label><input type="number" name="campo18" min="1" max="10"/><br>
+                <label>Número de tarjeta: </label><input type="text" name="campo18" placeholder="123456789101"/><br>
+                <label>Fecha de vencimiento: </label><input type="date" name="campo04"/><br>
+                <label>Código de seguridad: </label><input type="text" name="campo01" placeholder="123"/><br>
+                <br>
+                <label>Confirmar: </label><input type="submit" name="campo10" value="OK"/><br>
+                <label>reset: </label><input type="reset" name="campo22" value="Reset"/><br>
+            </form>
+        </article>
+        </section>
+        <footer id="piepagina">
+            Derechos reservados &COPY; 2022, Teléfono <address style="display: inline">8899-7766</address>
+        </footer>
+    </body>
+</html>
