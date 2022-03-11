@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns="http://ww.w3.org/1999/xhtml">
+        <head>
+            <title>Practica</title>
+            <meta charset="UTF-8">
+        </head>
+        <body>
+            <h1>Gestión de Estados</h1>
+            <a th:href="@{/}">Regresar</a>
+            <form method="post"
+                  th:action="@{/guardarEstado}"
+                  th:object="${estado}">
+                <label for="id">ID: </label>
+                <input type="text" name="Id_estado" th:field="*{Id_estado}"/>
+                <br/>
+                <label for="nombre">Nombre: </label>
+                <input type="text" name="nombre" th:field="*{nombre}"/>
+                <br/>
+                <label for="capital">Capital: </label>
+                <input type="text" name="capital" th:field="*{capital}"/>
+                <br/>
+                <label for="poblacion">Poblacion: </label>
+                <input type="number" name="poblacion" th:field="*{poblacion}"/>
+                <br/>
+                <label for="costas">Costas: </label>
+                <input type="text" name="costas" th:field="*{costas}"/>
+                <br/>
+                <input type="submit" name="guardar" value="Guardar"/>
+            </form>
+        </body>
+    </body>
+</html>

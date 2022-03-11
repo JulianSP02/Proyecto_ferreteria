@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Practica01</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1,0">
+    </head>
+    <body>
+        <h1>Gestión de Estados</h1>
+
+        <a th:href="@{/nuevoEstado}">Estado</a>
+        <div th:if"${estados != null and !estados.empty}">
+            <table border="1"
+                   class="tabla01">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Capital</th>
+                        <th>Poblacion</th>
+                        <th>Costas</th>
+                        <th>Modificar</th>
+                        <th>Eliminar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr th:each="estado: ${estados}">
+                        <td th:text="${estado.Id_estado}"></td>
+                        <td th:text="${estado.Nombre}"></td>
+                        <td th:text="${estado.Capital}"></td>
+                        <td th:text="${estado.poblacion}"></td>
+                        <td th:text="${estado.Costas}"></td>
+                        <td><a th:href="@{/modificarEstado/}+${estado.Id_estado}">Modificar</a></td>
+                        <td><a th:href="@{/eliminarEstado/}+${estado.Id_estado}">Eliminar</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        No tenemos estados que mostrar...
+    </body>
+</html>

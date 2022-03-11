@@ -1,0 +1,23 @@
+{
+    "elements": {},
+    "attributes": {
+        "th:text": {
+            "context": "td"
+        },
+        "th:if\"${estados": {
+            "context": "div"
+        },
+        "th:action": {
+            "context": "form"
+        },
+        "th:href": {
+            "context": "a"
+        },
+        "th:each": {
+            "context": "tr"
+        },
+        "th:field": {
+            "context": "input"
+        }
+    }
+}
