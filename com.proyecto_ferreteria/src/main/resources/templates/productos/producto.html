@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Mi Ferreteria</title>
+        <meta charset="UTF-8"/>
+        <link href="/css/menu.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <header th:replace="plantilla/plantilla :: header"/>
+        
+        <div class="contenido">
+        <h2>Últimas de las ofertas disponibles para usted</h2>
+        <di th:if="${articulos != null and !articulos.empty}">
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Descripción</th>
+                        <th>Precio</th>
+                        <th>Comprar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr th:each="articulo : ${articulos}">
+                        <td th:text="${articulo.descripcion}"></td>
+                        <td th:text="${articulo.precio}"></td>                    
+                        <td><a th:href="@{/carrito/agregar/} + ${articulo.idArticulo}">Agregar</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </di>
+            <div th:if="${articulos == null or articulos.empty}">
+                No tenemos productos que mostrar...
+            </div>
+        </div>
+        <footer th:replace="plantilla/plantilla :: footer"/>
+    </body>
+</html>
